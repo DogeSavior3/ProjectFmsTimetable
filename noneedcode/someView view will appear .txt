@@ -1,0 +1,17 @@
+ override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let width: CGFloat = 60
+        let height: CGFloat = 100
+        let someView = UIView(frame: .init(x: self.view.frame.width / 2 - width / 2,
+                                           y: self.view.frame.height / 2 - height / 2,
+                                           width: width,
+                                           height: height))
+        
+        someView.translatesAutoresizingMaskIntoConstraints = false
+        someView.backgroundColor = .red
+        
+        view.addSubview(someView)
+        
+    }
+
