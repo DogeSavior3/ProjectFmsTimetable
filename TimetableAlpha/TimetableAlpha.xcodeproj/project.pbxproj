@@ -104,17 +104,33 @@
 				892EC42A295703C400F9D307 /* AppDelegate.swift */,
 				892EC42C295703C400F9D307 /* SceneDelegate.swift */,
 				892EC42E295703C400F9D307 /* ViewController.swift */,
+				892EC46229574E6200F9D307 /* NetworkImageView.swift */,
 				892EC430295703C400F9D307 /* Main.storyboard */,
 				892EC433295703C700F9D307 /* Assets.xcassets */,
 				892EC435295703C700F9D307 /* LaunchScreen.storyboard */,
 				892EC438295703C700F9D307 /* Info.plist */,
-				892EC45A295706C600F9D307 /* TableViewController.swift */,
-				892EC45C29571C8300F9D307 /* ProductTableViewCell.swift */,
-				892EC45E2957458C00F9D307 /* Week.swift */,
-				892EC46029574AE200F9D307 /* WeekManager.swift */,
-				892EC46229574E6200F9D307 /* NetworkImageView.swift */,
+				894AF0082957601500AC52ED /* Table */,
+				894AF0092957603500AC52ED /* Week */,
 			);
 			path = TimetableAlpha;
+			sourceTree = "<group>";
+		};
+		894AF0082957601500AC52ED /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				892EC45A295706C600F9D307 /* TableViewController.swift */,
+				892EC45C29571C8300F9D307 /* ProductTableViewCell.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		894AF0092957603500AC52ED /* Week */ = {
+			isa = PBXGroup;
+			children = (
+				892EC45E2957458C00F9D307 /* Week.swift */,
+				892EC46029574AE200F9D307 /* WeekManager.swift */,
+			);
+			path = Week;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
