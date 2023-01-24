@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CocoaTextField",
+        "repositoryURL": "https://github.com/edgar-zigis/CocoaTextField",
+        "state": {
+          "branch": null,
+          "revision": "0087ad64c9f5dfc287ad6163306667ad92bf8837",
+          "version": "1.1.2"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "90135885ef506506620c4911cefb55a95ca2a9a2",
+          "version": "7.5.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

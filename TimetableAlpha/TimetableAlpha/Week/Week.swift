@@ -8,6 +8,7 @@
 import Foundation
 
 struct Week {
+    
     let WeekdayID: String
     let DateID: String
     let imageUrl: URL?

@@ -27,11 +27,17 @@ class ProductTableViewCell: UITableViewCell {
         listButton.tintColor = .systemGray3
         
         backgroundColor = .systemGray4
+        
+        productImageView.contentMode = .scaleAspectFit
+        productImageView.layer.cornerRadius = 8
+//        productImageView.layer.masksToBounds = true
     }
 
     func configure(with week: Week) {
         productLabel.text = week.WeekdayID + "  " + week.DateID
         productImageView.setURL(url: week.imageUrl)
+        
+        //make done bool section!
         
     }
 

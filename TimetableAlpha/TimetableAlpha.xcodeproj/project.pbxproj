@@ -18,6 +18,13 @@
 		892EC45F2957458C00F9D307 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892EC45E2957458C00F9D307 /* Week.swift */; };
 		892EC46129574AE300F9D307 /* WeekManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892EC46029574AE200F9D307 /* WeekManager.swift */; };
 		892EC46329574E6200F9D307 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892EC46229574E6200F9D307 /* NetworkImageView.swift */; };
+		894AF00C2977016600AC52ED /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 894AF00B2977016600AC52ED /* Kingfisher */; };
+		894AF00E297707B200AC52ED /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF00D297707B200AC52ED /* CollectionViewController.swift */; };
+		894AF01129770B6A00AC52ED /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF00F29770B6A00AC52ED /* CollectionViewCell.swift */; };
+		894AF01229770B6A00AC52ED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894AF01029770B6A00AC52ED /* CollectionViewCell.xib */; };
+		894AF0142977155400AC52ED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF0132977155400AC52ED /* Event.swift */; };
+		894AF0162977157100AC52ED /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF0152977157100AC52ED /* EventManager.swift */; };
+		894AF01E2980832600AC52ED /* CocoaTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 894AF01D2980832600AC52ED /* CocoaTextField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,11 @@
 		892EC45E2957458C00F9D307 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		892EC46029574AE200F9D307 /* WeekManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekManager.swift; sourceTree = "<group>"; };
 		892EC46229574E6200F9D307 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		894AF00D297707B200AC52ED /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		894AF00F29770B6A00AC52ED /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		894AF01029770B6A00AC52ED /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		894AF0132977155400AC52ED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		894AF0152977157100AC52ED /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894AF01E2980832600AC52ED /* CocoaTextField in Frameworks */,
+				894AF00C2977016600AC52ED /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +124,11 @@
 				892EC435295703C700F9D307 /* LaunchScreen.storyboard */,
 				892EC438295703C700F9D307 /* Info.plist */,
 				894AF0082957601500AC52ED /* Table */,
+				894AF017297716DB00AC52ED /* Event */,
 				894AF0092957603500AC52ED /* Week */,
+				894AF00D297707B200AC52ED /* CollectionViewController.swift */,
+				894AF00F29770B6A00AC52ED /* CollectionViewCell.swift */,
+				894AF01029770B6A00AC52ED /* CollectionViewCell.xib */,
 			);
 			path = TimetableAlpha;
 			sourceTree = "<group>";
@@ -133,6 +151,15 @@
 			path = Week;
 			sourceTree = "<group>";
 		};
+		894AF017297716DB00AC52ED /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				894AF0132977155400AC52ED /* Event.swift */,
+				894AF0152977157100AC52ED /* EventManager.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +176,10 @@
 			dependencies = (
 			);
 			name = TimetableAlpha;
+			packageProductDependencies = (
+				894AF00B2977016600AC52ED /* Kingfisher */,
+				894AF01D2980832600AC52ED /* CocoaTextField */,
+			);
 			productName = TimetableAlpha;
 			productReference = 892EC427295703C400F9D307 /* TimetableAlpha.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +252,10 @@
 				Base,
 			);
 			mainGroup = 892EC41E295703C400F9D307;
+			packageReferences = (
+				894AF00A2977016600AC52ED /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				894AF01C2980832600AC52ED /* XCRemoteSwiftPackageReference "CocoaTextField" */,
+			);
 			productRefGroup = 892EC428295703C400F9D307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,6 +274,7 @@
 			files = (
 				892EC437295703C700F9D307 /* LaunchScreen.storyboard in Resources */,
 				892EC434295703C700F9D307 /* Assets.xcassets in Resources */,
+				894AF01229770B6A00AC52ED /* CollectionViewCell.xib in Resources */,
 				892EC432295703C400F9D307 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894AF01129770B6A00AC52ED /* CollectionViewCell.swift in Sources */,
+				894AF0142977155400AC52ED /* Event.swift in Sources */,
+				894AF00E297707B200AC52ED /* CollectionViewController.swift in Sources */,
 				892EC45D29571C8400F9D307 /* ProductTableViewCell.swift in Sources */,
 				892EC46329574E6200F9D307 /* NetworkImageView.swift in Sources */,
 				892EC46129574AE300F9D307 /* WeekManager.swift in Sources */,
+				894AF0162977157100AC52ED /* EventManager.swift in Sources */,
 				892EC42F295703C400F9D307 /* ViewController.swift in Sources */,
 				892EC45F2957458C00F9D307 /* Week.swift in Sources */,
 				892EC42B295703C400F9D307 /* AppDelegate.swift in Sources */,
@@ -612,6 +652,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		894AF00A2977016600AC52ED /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		894AF01C2980832600AC52ED /* XCRemoteSwiftPackageReference "CocoaTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/edgar-zigis/CocoaTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		894AF00B2977016600AC52ED /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 894AF00A2977016600AC52ED /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		894AF01D2980832600AC52ED /* CocoaTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 894AF01C2980832600AC52ED /* XCRemoteSwiftPackageReference "CocoaTextField" */;
+			productName = CocoaTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 892EC41F295703C400F9D307 /* Project object */;
 }
