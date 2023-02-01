@@ -15,9 +15,11 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with event: Event) {
-        backgroundColor = .cyan
+        backgroundColor = .systemRed
 
 
     }
+    
+    
 
 }

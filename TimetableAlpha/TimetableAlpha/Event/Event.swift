@@ -7,9 +7,15 @@
 
 import Foundation
 
+struct Task {
+    let Text: String = ""
+    let IsDone: Bool = false
+}
+
 struct Event {
-    let Date: Date? = nil
+    let EndDate: Date? = nil
     let EventTag: String = ""
-    
+    let EventDis: String = ""
+    let Task: [Task?] = []
     
 }

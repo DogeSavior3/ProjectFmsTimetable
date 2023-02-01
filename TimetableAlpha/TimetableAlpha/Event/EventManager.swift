@@ -21,9 +21,6 @@ class EventManager: EventManagerProtocol {
             Event(),
             Event(),
             Event(),
-            Event(),
-            Event(),
-            Event(),
             Event()
         ]
         

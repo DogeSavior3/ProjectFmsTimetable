@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0pl-rv-quC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nXs-xx-Obf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -87,14 +87,13 @@
                             <outlet property="delegate" destination="1l7-07-wQm" id="L15-R5-m9X"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Ежедневник" id="TIb-wO-LvE"/>
                     <navigationItem key="navigationItem" title="Ежедневник" id="GYe-my-K6x"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVt-Hi-DGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515.9420289855075" y="-617.41071428571422"/>
+            <point key="canvasLocation" x="2426.0869565217395" y="-617.41071428571422"/>
         </scene>
-        <!--Предстоящие собатия-->
+        <!--Предстоящие события-->
         <scene sceneID="j0r-Ta-jeg">
             <objects>
                 <viewController id="UmY-OK-tFC" customClass="CollectionViewController" customModule="TimetableAlpha" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J0G-Sa-ziB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fyc-9m-53h">
                                     <size key="itemSize" width="128" height="128"/>
@@ -118,38 +117,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="J0G-Sa-ziB" secondAttribute="trailing" id="Mox-dQ-ulP"/>
+                            <constraint firstItem="J0G-Sa-ziB" firstAttribute="top" secondItem="IK1-pH-NB5" secondAttribute="top" id="QZK-bz-AYj"/>
                             <constraint firstItem="J0G-Sa-ziB" firstAttribute="bottom" secondItem="IK1-pH-NB5" secondAttribute="bottom" id="WPZ-ct-U4p"/>
-                            <constraint firstItem="J0G-Sa-ziB" firstAttribute="top" secondItem="m0S-70-qME" secondAttribute="top" id="xIb-ob-0xW"/>
                             <constraint firstItem="J0G-Sa-ziB" firstAttribute="leading" secondItem="m0S-70-qME" secondAttribute="leading" id="xtr-DT-DC3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="События" id="1zp-dn-4NY"/>
-                    <navigationItem key="navigationItem" title="Предстоящие собатия" id="f5u-OF-EDY"/>
+                    <navigationItem key="navigationItem" title="Предстоящие события" id="f5u-OF-EDY"/>
                     <connections>
                         <outlet property="collectionView" destination="J0G-Sa-ziB" id="FnQ-k7-uVO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBs-e9-ve0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534.7826086956522" y="69.642857142857139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="mDP-a9-H1G">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0pl-rv-quC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xP8-Rs-iSX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nXs-xx-Obf" kind="relationship" relationship="rootViewController" id="hdc-hU-qzW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nIE-sx-w0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-304.34782608695656" y="-617.41071428571422"/>
+            <point key="canvasLocation" x="2444.9275362318845" y="69.642857142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OtM-Ps-viB">
@@ -162,13 +142,51 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1l7-07-wQm" kind="relationship" relationship="viewControllers" id="VXv-i6-PTS"/>
-                        <segue destination="UmY-OK-tFC" kind="relationship" relationship="viewControllers" id="XIn-eC-qzC"/>
+                        <segue destination="RWJ-0G-toC" kind="relationship" relationship="viewControllers" id="GJW-mb-wki"/>
+                        <segue destination="9Dc-TV-6AW" kind="relationship" relationship="viewControllers" id="Zl4-z2-1Cv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAY-2p-4XV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605.79710144927537" y="-617.41071428571422"/>
+            <point key="canvasLocation" x="-29" y="-617"/>
+        </scene>
+        <!--Ежедневник-->
+        <scene sceneID="g2x-kK-9hE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RWJ-0G-toC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ежедневник" id="TIb-wO-LvE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lv6-5p-WAw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1l7-07-wQm" kind="relationship" relationship="rootViewController" id="Mcz-e4-jG7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3z-CH-nMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-617"/>
+        </scene>
+        <!--События-->
+        <scene sceneID="lPA-FP-KcG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Dc-TV-6AW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="События" id="1zp-dn-4NY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nsN-TY-5uI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UmY-OK-tFC" kind="relationship" relationship="rootViewController" id="fH1-y2-iNz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hY2-Mu-1vI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="70"/>
         </scene>
     </scenes>
     <resources>

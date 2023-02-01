@@ -18,6 +18,15 @@
           "revision": "90135885ef506506620c4911cefb55a95ca2a9a2",
           "version": "7.5.0"
         }
+      },
+      {
+        "package": "PinLayout",
+        "repositoryURL": "https://github.com/layoutBox/PinLayout",
+        "state": {
+          "branch": null,
+          "revision": "75c88c5c374c7bc78a154ffdf963cd362f38258a",
+          "version": "1.10.3"
+        }
       }
     ]
   },

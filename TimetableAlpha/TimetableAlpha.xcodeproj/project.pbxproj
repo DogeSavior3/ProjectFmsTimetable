@@ -25,6 +25,8 @@
 		894AF0142977155400AC52ED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF0132977155400AC52ED /* Event.swift */; };
 		894AF0162977157100AC52ED /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF0152977157100AC52ED /* EventManager.swift */; };
 		894AF01E2980832600AC52ED /* CocoaTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 894AF01D2980832600AC52ED /* CocoaTextField */; };
+		894AF0202980985100AC52ED /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF01F2980985000AC52ED /* AddTaskViewController.swift */; };
+		894AF0232982DCFB00AC52ED /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 894AF0222982DCFB00AC52ED /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 		894AF01029770B6A00AC52ED /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		894AF0132977155400AC52ED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		894AF0152977157100AC52ED /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		894AF01F2980985000AC52ED /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894AF0232982DCFB00AC52ED /* PinLayout in Frameworks */,
 				894AF01E2980832600AC52ED /* CocoaTextField in Frameworks */,
 				894AF00C2977016600AC52ED /* Kingfisher in Frameworks */,
 			);
@@ -129,6 +133,7 @@
 				894AF00D297707B200AC52ED /* CollectionViewController.swift */,
 				894AF00F29770B6A00AC52ED /* CollectionViewCell.swift */,
 				894AF01029770B6A00AC52ED /* CollectionViewCell.xib */,
+				894AF01F2980985000AC52ED /* AddTaskViewController.swift */,
 			);
 			path = TimetableAlpha;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			packageProductDependencies = (
 				894AF00B2977016600AC52ED /* Kingfisher */,
 				894AF01D2980832600AC52ED /* CocoaTextField */,
+				894AF0222982DCFB00AC52ED /* PinLayout */,
 			);
 			productName = TimetableAlpha;
 			productReference = 892EC427295703C400F9D307 /* TimetableAlpha.app */;
@@ -255,6 +261,7 @@
 			packageReferences = (
 				894AF00A2977016600AC52ED /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				894AF01C2980832600AC52ED /* XCRemoteSwiftPackageReference "CocoaTextField" */,
+				894AF0212982DCFB00AC52ED /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 892EC428295703C400F9D307 /* Products */;
 			projectDirPath = "";
@@ -312,6 +319,7 @@
 				892EC42B295703C400F9D307 /* AppDelegate.swift in Sources */,
 				892EC42D295703C400F9D307 /* SceneDelegate.swift in Sources */,
 				892EC45B295706C600F9D307 /* TableViewController.swift in Sources */,
+				894AF0202980985100AC52ED /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +678,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		894AF0212982DCFB00AC52ED /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -682,6 +698,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 894AF01C2980832600AC52ED /* XCRemoteSwiftPackageReference "CocoaTextField" */;
 			productName = CocoaTextField;
+		};
+		894AF0222982DCFB00AC52ED /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 894AF0212982DCFB00AC52ED /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
